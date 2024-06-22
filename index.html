@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Calculator</title>
+    <link
+            rel="icon"
+            href="icons8-money-16.png"
+            type="image/x-icon"
+        />
+    
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="maingrid">
+        <form id="form">
+            <label for="pay_cadence">Payment Cadence</label>
+            <select id="pay_cadence">
+                <option value="two_weeks" id="two_weeks">Every 2 Weeks</option>
+                <option value="weekly">Every Week</option>
+                <option value="monthly">Every Month</option>
+                <option value="twice_monthly">Twice a Month</option>
+            </select>
+            <br>
+            <input type="radio" id="consistent" value="consistent" name="pay_toggle">
+            <label for="consistent">Consistent Pay</label>
+            <br>
+            <input type="radio" id="inconsistent" value="inconsistent" name="pay_toggle">
+            <label for="inconsistent">Inconsistent Pay</label>
+            <div id="paycheck_amount">
+                <input type="number" placeholder="Enter Paystub Amount" class="sum-input"></input>
+                <button id="plusbutton" type="button"><span>&#43;</span></button>
+            </div>
+
+            <button type="submit" class="submit">Run my Calculations</button>
+        </form>
+        <p id="yearly"></p>
+        <p id="monthly"></p>
+    </div>
+    <script src="main.js"></script>
+    <div class="footer"><a target="_blank" href="https://icons8.com/icon/d3mh0K9dp8kE/money-bag">Money</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div>
+</body>
+</html>

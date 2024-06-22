@@ -1,0 +1,92 @@
+
+#plusbutton {
+  background-color: #fdc526;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: none;
+}
+#plusbutton:hover {
+  background-color: #264FFD;
+}
+#plusbutton span {
+  font-size: 20px;
+}
+
+body {
+  background-color: rgba(32, 42, 68, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.maingrid {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+select,
+input[type="number"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.sum-input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+button.submit {
+  background-color: #fdc526;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.submit:hover {
+  background-color: #264FFD;
+}
+
+p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Adjustments for responsiveness */
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 8px;
+}
